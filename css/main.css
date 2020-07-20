@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.icon {
+    width: 5em;
+    height: 5em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    padding: 35px 65px;
+  }
+
+a{
+    text-decoration: none;
+}
+.landing-page{
+    top: 60px;
+    width: 100%;
+    height: 100vh;
+    background:  	#F0F8FF;
+    position: relative;
+   overflow: hidden;
+   margin-bottom: 20px;
+}
+.landing-page::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../imags/1.JPG)no-repeat;
+    background-size: cover;
+    opacity: .3;
+
+    animation: sport 25s linear infinite;
+}
+@keyframes sport{
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.page-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.page-content h1{
+    color: #7988a9;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.page-content p{
+    color: #7988a9;
+    margin-bottom: 20px;
+}
+.page-content a{
+    display: inline-block;
+    text-decoration: none;
+    color: #7988a9;
+    font-size: 20px;
+    font-weight: 15px;
+    border: 2px solid uppercase;
+    padding: 10px 20px;
+    transition: 0.4s linear;
+}
+.page-content a:hover{
+    color: #fff;
+    background: #b9bc61;
+}
+
+#box{
+    z-index:9999;
+    top: 0;
+    height: 60px;
+    background:#B0C4DE;
+    position: fixed; 
+    width: 100%;
+    }
+#box #menu{
+    display:none;
+    float: right;
+    line-height: 60px;
+    margin-right:20px;
+    font-size: 18px; 
+    cursor: pointer
+}
+#box #menu p{
+    color: #f5e3d7;
+    font-size: 20px;
+}
+
+#box #menu .nav-list{
+    position: fixed;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    height: 60px;
+    
+}
+#box #menu .nav-list a{
+    color: #B0C4DE;
+    display: block;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    border-bottom: 1px solid #B0C4DE;
+}
+#box #menu:hover .nav-list {
+    display: block;
+}
+#box .nav-list {
+    display: block; 
+    float: right;
+    margin-right: 20px;
+    }
+#box .nav-list a {
+    color: white; 
+    font-size: 18px; 
+    line-height: 60px;
+    float: left; 
+    margin-right: 20px;
+    }
+#my{
+    height: 900px;
+    background:#B0C4DE;
+    position: relative;
+  
+}
+#my p{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 100px;  
+    color: #7988a9; 
+}
+
+#my .imag{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+}
+#my .imag img{
+    max-width: 100%;
+}
+
+#my-intro p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 20px;
+    transform: translate(-50%,10%);
+}
+
+
+#skills{
+    width: 1000px;
+    height: 600px;
+    margin: auto;
+    background: white;
+}
+#skills p{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;   
+    color: #7988a9; 
+}
+#skills .item{
+    width: 900px;
+    height: 400px;
+    background: white;
+    margin: 30px auto;
+}
+#skills .item .imag{
+    width: 200px;
+    height: 150px;
+
+    float: left;
+    margin: 30px 30px 2px;
+}
+#skills .item .imag:hover{
+    transition-duration: 1s;
+    transform: scale(1.5);
+}
+
+
+#skills .item .imag-a{
+    width: 200px;
+    height: 100px;
+    background: salmon;
+    float: left;
+    margin: 15px 30px;
+    border-radius: 5%;
+}
+#skills .item .imag-a p{
+    font-size: 12px;
+    text-align: left;
+    margin: 0 10px;
+}
+
+
+
+
+
+
+#contact{
+    background: #e9e9e9;
+    height: 230px;
+    width: 100%;
+}
+#contact a{
+    font-size: 20px;
+    margin-bottom: 80px;
+    display: block;
+    text-align: center;
+    margin:  30px auto;
+    padding-top: 20px;
+
+}
+#contact .contact-image{
+    width: 900px;
+    height: 100px;
+    margin:  0 auto;
+
+}
+#contact .contact-image::after #icon-dianhua{
+    content: url(../imags/QQ.jpg);
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+        #box #menu {
+            display: block;
+        }
+        #box .nav-list {
+            display: none;
+        }
+    }
+
+    ul, ol, menu { list-style: none;}
+
+
+
+    
+
+
+        
